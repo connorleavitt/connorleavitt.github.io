@@ -1,0 +1,27 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    border: 5px black; /* comment here */
+    background-color: aqua;
+}
+
+h1, h2 { 
+    text-decoration: line-through;
+}
+
+h2 {border-bottom: 5px solid blue;}
+
+p {
+    font-family: sans-serif;
+    color: purple;
+    background-color: white;
+}
+.class_test{
+    font-family: 'Times New Roman', monospace;
+    color: black;
+    padding: 10px;
+}
+.test{
+    font-size: 40px;
+    letter-spacing: 5px;
+}
