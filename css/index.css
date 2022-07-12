@@ -1,8 +1,31 @@
+nav {
+    background-color: rgb(163, 163, 255);
+	margin: 10px 0px 0px 0px;
+}
+    nav ul {
+        margin: 0px;
+        list-style-type: none;
+        padding: 5px 0px 5px 0px;
+    }
+    nav ul li {
+        display: inline;
+        padding: 5px 10px 5px 10px;
+        color: white;
+    }
+    nav ul li a:link, nav ul li a:visited {
+        color: #ffffff;
+        border-bottom: none;
+        font-weight: bold;
+    }
+    nav ul li.selected {
+        background-color: rgb(110, 110, 255);
+    }
+
 body {
     font-family: 'Times New Roman', Times, serif;
     color: blue;
     border: 5px black; /* comment here */
-    background-color: aqua;
+    background-color: plum;
 }
 
 h1, h2 { 
