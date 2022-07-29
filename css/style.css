@@ -1,0 +1,188 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+*,::after,::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: rgb(249, 212, 249);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #5e6d82;
+	margin: 0px;
+    padding: 3px 20px 3px 20px;
+    display: flex;
+    align-items: center;
+}
+    .nav-list {
+        display: flex;
+        list-style-type: none;
+        margin-left: auto;
+        padding: 0px 0px 0px 20px;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    .nav-list li {
+        color: black;
+        flex: 0;
+        padding: 5px 10px;
+    }
+    .nav-list li a:link, .nav-list li a:visited {
+        color: white;
+        border-bottom: none;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .nav-list li.selected {
+        text-decoration: none;
+        border-bottom: 2px solid white;
+    }
+
+
+
+header {
+    background-color: #728196;
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header section.intro-content {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    width: 600px;
+}
+
+h1.intro-header {
+    font-size: 36px;
+    margin: 0;
+}
+
+p.intro-msg {
+    font-size: 18px;
+    color: rgb(224, 224, 224);
+    margin: 10px 0px;
+}
+
+header img {
+    margin: 10px;
+}
+
+button {
+    font-size: 20px;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 120px;
+    padding: 0px 10px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.main-header {
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+div.main img {
+    height: 100px;
+    width: 100px;
+}
+
+.centermain {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section.quote {
+    display: flex;
+    flex-flow: column wrap;
+
+    margin: 20px 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: rgb(227, 255, 255);
+}
+
+blockquote.harveymilk-quote {
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+section.calltoaction {
+    background-color: #3b82f6;
+    border-radius: 10px;   
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+section div.c2a {
+    display: flex;
+    flex-flow: column wrap;
+    color: white;
+    margin-right: 20px;
+}
+
+section.calltoaction h3 {
+    margin: 0px;
+    font-size: 28px;
+}
+
+section div.calltoaction-text {
+    color: rgb(224, 224, 224);
+}
+
+button.calltoaction-signup {
+    border: 2px solid white;
+    align-items: center;
+}
+
+
+
+footer {
+    background-color: #728196;
+    color: white;
+    font-size: 16px;
+    min-height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding: 10px 0px;
+}
