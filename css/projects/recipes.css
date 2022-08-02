@@ -109,5 +109,22 @@ h2 {
 }
 
 
+footer {
+    background-color: #728196;
+    color: white;
+    font-size: 16px;
+    min-height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding: 10px 0px;
+}
+
+.footer-text a:link, .footer-text a:visited {
+    color: white;
+    border-bottom: none;
+    text-decoration: none;
+}
 
 
