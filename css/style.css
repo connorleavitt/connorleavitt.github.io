@@ -186,3 +186,9 @@ footer {
     margin-top: auto;
     padding: 10px 0px;
 }
+
+.footer-text a:link, .footer-text a:visited {
+    color: white;
+    border-bottom: none;
+    text-decoration: none;
+}
