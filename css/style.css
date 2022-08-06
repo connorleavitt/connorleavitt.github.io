@@ -60,7 +60,7 @@ header {
     flex-wrap: wrap;
 }
 
-header section.intro-content {
+header section.intro-content{
     display: flex;
     flex-flow: column wrap;
     padding: 10px;
@@ -78,6 +78,15 @@ p.intro-msg {
     font-size: 18px;
     color: rgb(224, 224, 224);
     margin: 10px 0px;
+}
+
+.intro-header-about {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    color: blue;
+    margin: 10px;
+    width: 600px;
 }
 
 header img {
