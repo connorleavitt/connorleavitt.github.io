@@ -1,0 +1,175 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(224, 192, 174);
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px;
+  font-size: 75px;
+  color: darkgreen;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 100px;
+  margin: auto;
+}
+
+
+.buttonSettings {
+  display: grid;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 4px;
+  min-width: 300px;
+  background-color: #d3e4cb;
+  border: 5px solid darkgreen;
+}
+
+button {
+  font-size: large;
+  font-weight: 800;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(160, 201, 160);
+  border: 2px solid darkgreen;
+}
+
+.button-on {
+  background-color: darkgreen;
+  color: white;
+}
+
+#penColor {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 50px;
+  margin-right: 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#penColor::-webkit-color-swatch {
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
+#penColor::-moz-color-swatch {
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
+.colorCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.sliderInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px 0px;
+  gap: 5px;
+  border: 2px solid black;
+  background-color: darkgreen;
+  color: white;
+}
+
+#grid-size {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 15px;
+  height: 15px;
+  background: #afcda0;
+  opacity: 0.9;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+#grid-size:hover {
+  opacity: 1;
+}
+
+#grid-size::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+#grid-size::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+label {
+  text-align: center;
+  font-size: 20px;
+}
+
+#container {
+  display: grid;
+  background-color: white;
+  gap: 0px;
+  min-width: 500px;
+  min-height: 500px;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  border: 5px solid rgb(236, 80, 69);
+}
+
+#grid-size {
+    margin: 10px;
+}
+
+  .grid-item {
+    padding: auto;
+    margin: 0px;
+    border: 0;
+    aspect-ratio: 1;
+  }
+
+.grid-lines {
+  border: 0.1px solid rgb(200, 200, 200);
+}
+
+.footer {
+  height: 72px;
+  background: #eee;
+  color: darkgreen;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
