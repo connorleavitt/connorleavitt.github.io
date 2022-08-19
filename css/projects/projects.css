@@ -44,11 +44,15 @@ nav {
 
 ol {
     list-style-type: disc;
+    font-size: 2em;
 }
 ol li a:link, ol li a:visited {
     color: black;
     border-bottom: none;
+    text-decoration: none;
 }
+
+
 
     footer {
         background-color: #728196;
