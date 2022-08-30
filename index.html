@@ -3,67 +3,182 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Welcome! </title>
-        <link type="text/css" rel="stylesheet" href="./css/style.css">
+        <title>Connor Leavitt</title>
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <script src="https://kit.fontawesome.com/e07d1d767e.js" crossorigin="anonymous"></script>
+        
+        <!-- update with my own font, change numbers if you want to dif weight -->
+        <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Inter:400,900|Ubuntu+Mono:300,900&display=swap">
+        
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/script.js" defer></script>
     </head>
 
+    <!-- name__subname === association or subsection of name, where as name--mod  === modifier -->
 
     <body>
-        <nav>
-            <img src="./img/chlorine.png" title="CL Logo" alt="CL Logo" width="50px" height="50px">
-            <ul class="nav-list">
-                <li class="selected"><a href="index.html">HOME</a></li>
-                <li><a href="https://www.linkedin.com/in/connorleavitt/" title="LinkedIn">LINKEDIN</a></li>
-                <li><a href="./pages/projects/projects.html" title="Projects">PROJECTS</a></li>
-                <li><a href="./pages/about.html" title="see more">ABOUT</a></li>
-            </ul>
-        </nav>
         <header>
-            <section class="intro-content">
-                <h1 class="intro-header"> This website is currently under construction! </h1>
-                <p class="intro-msg">This website is being worked on by Connor Leavitt and will be updated in the near future. Stay tuned! </p>
-                <button type="button" class="css-button-sharp--sky"> Sign Up </button>
-            </section>
-                <img src="./img/horse.png" title="placeholder image" alt="placeholder image" width="300px">
+            <img class="logo" src="./img/copyright-solid.svg" alt="">
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
+                </ul>
+            </nav>
         </header>
+
+
+        <!-- INTRO -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Connor Leavitt</strong>
+            </h1>
+                <p class="section__subtitle section__subtitle--intro">frontend web devevloper</p>
+                <img src="./img/connor_leavitt_main_photo.jpeg" alt="a picture of Connor Leavitt smiling" class="intro__img"> <!-- need to input a picture of ME -->
+        </section>
+
+        <!-- MY SERVICES -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>WORK 1</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Incidunt praesentium quibusdam iusto. Sequi quis, 
+                        eius deleniti iure autem consectetur nulla odio qui necessitatibus 
+                        eum consequatur, voluptates, quos sit illo. Officiis.</p>
+                </div> <!-- / service -->
+
+                <div class="service">
+                    <h3>WORK 2</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Incidunt praesentium quibusdam iusto. Sequi quis, 
+                        eius deleniti iure autem consectetur nulla odio qui necessitatibus 
+                        eum consequatur, voluptates, quos sit illo. Officiis.</p>
+                </div> <!-- / service -->
+
+                <div class="service">
+                    <h3>WORK 3</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Incidunt praesentium quibusdam iusto. Sequi quis, 
+                        eius deleniti iure autem consectetur nulla odio qui necessitatibus 
+                        eum consequatur, voluptates, quos sit illo. Officiis.</p>
+                </div> <!-- / service -->
+
+            </div> <!-- / services -->
+            <a href="#work" class="btn">My Work</a>
+        </section>
+
+
+        <!-- ABOUT ME -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">frontend web dev located in SF</p>
+            <div class="about-me__body">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Est, nostrum odio perferendis optio nisi sapiente error quidem 
+                    aut numquam inventore enim ipsam quisquam esse ut eos non officia hic ad?</p>
+                <ul class="section__about--project-list">
+                    <li class="section__about--sample-projects">
+                        <a class="section__about--link" href="./pages/projects/sketch.html">
+                            Sketch!
+                        </a>
+                    </li>
+                    <li class="section__about--sample-projects">
+                        <a class="section__about--link" href="./pages/projects/calculator.html">
+                            Calculator (w/ basic JS)
+                        </a>
+                    </li>
+                    <li class="section__about--sample-projects">
+                        <a class="section__about--link" href="./pages/projects/rockPaperScissors.html">
+                            Simple RPS Game
+                        </a>
+                    </li>
+                </ul>
+            
+            
+                </div>
+
+            <img src="./img/connor_antarctica.jpg" 
+                alt="another image of Connor" 
+                class="about-me__img">
+
+        </section>
+    
+
+        <!-- MY WORK -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My Work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+
+                <!-- Portfolio Item 1 -->
+                <a href="./pages/portfolio-item.html" class="portfolio__item">
+                    <img src="./img/connor_hawaii.jpg" alt="" class="portfolio__img"> <!-- find image of portfolio items -->
+                </a>
+
+                <!-- Portfolio Item 2 -->
+                <a href="./pages/portfolio-item.html" class="portfolio__item">
+                    <img src="./img/connor_snowboarding.jpg" alt="" class="portfolio__img"> <!-- find image of portfolio items -->
+                </a>
+                
+                <!-- Portfolio Item 3 -->
+                <a href="./pages/portfolio-item.html" class="portfolio__item">
+                    <img src="./img/connor_warehouse.jpg" alt="" class="portfolio__img"> <!-- find image of portfolio items -->
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT ME -->
+        <section class="contact-me" id="contact">
+            <h2 class="section__title section__title--contact">Contact Me</h2>
+                <p class="section__subtitle section__subtitle--contact">Submit the form below</p>
+            <div class="form__container">
+                <form class="form" action="">
+                    <label for="name" class="form__name--label"></label>
+                    <input type="text" id="name" name="name" class="form__text" placeholder="Your Name"></label>
+                    
+                    <label for="email" class="form__email--label"></label>
+                    <input type="email" id="email" name="email" class="form__text" placeholder="Your Email"></label>
+                    
+                    <label for="message" class="form__message--label"></label>
+                    <textarea name="message" id="message" rows="4" class="form__text" placeholder="Message"></textarea>
+                    
+                    <button type="submit" class="btn">Contact Me</button>
+                    
+                </form>
+            </div>
+        </section>
         
-    <h2 class="main-header"> Some random information. </h2>
-    <div class="centermain">
-        <div class="main">
-            <img src="./img/projects/barberry.png" alt="barberry" width="250px">
-            <div class="main-text">This is a type of plant. We love this one.</div>
-        </div>
-        <div class="main">
-            <img src="./img/projects/chilli.png" alt="chili" width="250px">
-            <div class="main-text">This is another type of plant. Isn't it nice</div>
-        </div>
-        <div class="main">
-            <img src="./img/projects/pepper.png" alt="pepper" width="250px">
-            <div class="main-text">We have so many plants. Yay plants.</div>
-        </div>
-        <div class="main">
-            <img src="./img/projects/saffron.png" alt="saffron" width="250px">
-            <div class="main-text">I'm running out of things to say about plants.</div>
-        </div>
-    </div>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <a href="mailto:connorleavitt@gmail.com" class="footer__link">connorleavitt@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__items">
+                    <a href="https://linkedin.com/in/connorleavitt/" 
+                    class="social-list__link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                </li> <!-- LinkedIN -->
+                <li class="social-list__items">
+                    <a href="https://github.com/connorleavitt" 
+                    class="social-list__link">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+                </li> <!-- Github -->
+            </ul>
+        </footer>
 
-    <section class="quote">
-        <blockquote class="harveymilk-quote"><em>“I know that you cannot live on hope alone, but without it, life is not worth living.”</em>
-            <p class="harveymilk"> — <strong>Harvey Milk</strong></p>
-        </blockquote>
-    </section>
-
-    <section class="calltoaction">
-        <div class="c2a">
-        <h3> Call to action! </h3>
-        <div class="calltoaction-text"> Sign up for our updates to this website! </div>
-        </div>
-        <button type="button" class="calltoaction-signup"> Sign Up </button>
-    </section>
-
-    <footer>
-        <div class="footer-text"> Copyright © <a href="../../index.html">Connor Leavitt</a> 2022 </div>
-    </footer>
-        
     </body>
 </html>

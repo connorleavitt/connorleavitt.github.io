@@ -61,3 +61,8 @@ nav {
 h2.formHeader {
     font-size: 1.5rem;
 }
+
+
+.contactForm > form {
+    text-align: center;
+}
