@@ -1,0 +1,212 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size) * .8); /*size of mark inside cell*/
+    
+    --ff-primary: 'Inter', sans-serif;
+    --ff-secondary: 'Ubuntu Mono', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #f5f5f5;
+    --clr-mid: rgb(196, 196, 196);
+    --clr-dark: #365943;
+    --clr-accent: #c1aec0;
+    --clr-call-to-action: #eea144;
+    --clr-text: #161314;
+    
+    --fs-h1: 3rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,0.15);
+
+}
+
+body { 
+    font-family: var(--ff-secondary);
+    line-height: 1;
+    margin: 0;
+    background-color: var(--clr-light);
+}
+
+.header {
+    text-align: center;
+    font-size: var(--fs-h2);
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.board {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    gap: 0;
+    margin: 3em auto;
+}
+
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 1px solid var(--clr-call-to-action);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(3n + 1) {
+    border-left: none;
+}
+
+.cell:nth-child(3n + 3) {
+    border-right: none;
+}
+
+.cell:last-child,
+.cell:nth-child(7),
+.cell:nth-child(8) {
+    border-bottom: none;
+}
+
+.cell.x,
+.cell.circle {
+    cursor: not-allowed;
+}
+
+.cell.x::before,
+.cell.x::after,
+.cell.circle::before {
+    background-color: var(--clr-dark);
+}
+
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before {
+    background-color: var(--clr-accent);
+}
+
+/* make X */
+
+    .cell.x::before,
+    .cell.x::after,
+    .board.x .cell:not(.x):not(.circle):hover::before,
+    .board.x .cell:not(.x):not(.circle):hover::after {
+        content: '';
+        position: absolute;
+        width: calc(var(--mark-size) * 0.15);
+        height: var(--mark-size);
+    }
+
+    .cell.x::before,
+    .board.x .cell:not(.x):not(.circle):hover::before {
+        transform: rotate(45deg);
+    }
+
+    .cell.x::after,
+    .board.x .cell:not(.x):not(.circle):hover::after {
+        transform: rotate(-45deg);
+    }
+
+/* make Circle */
+
+    .cell.circle::before,
+    .cell.circle::after,
+    .board.circle .cell:not(.x):not(.circle):hover::before,
+    .board.circle .cell:not(.x):not(.circle):hover::after  {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .cell.circle::before,
+    .board.circle .cell:not(.x):not(.circle):hover::before {
+        width: var(--mark-size);
+        height: var(--mark-size);
+    }
+
+    .cell.circle::after,
+    .board.circle .cell:not(.x):not(.circle):hover::after {
+        width: calc(var(--mark-size) * 0.7);
+        height: calc(var(--mark-size) * 0.7);
+        background-color: var(--clr-light);
+    }
+
+
+.winning-msg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-light);
+    font-size: var(--fs-h2);
+}
+
+.reset-button {
+    font-size: 2rem;
+    background-color: var(--clr-call-to-action);
+    color: var(--clr-text);
+    border: 1px solid var(--clr-light);
+    padding: .25em .5em;
+    margin: 1em;
+    cursor: pointer;
+}
+
+.winning-msg button:hover {
+    background-color: var(--clr-mid);
+    color: var(--clr-text);
+    border: 1px solid var(--clr-text);
+}
+
+.winning-msg.show {
+    display: flex;
+}
+
+.playerList {
+    /* display: flex; */
+}
+
+.player {
+    margin-bottom: 1em;
+    /* background-color: #365943; */
+}
+
+.player:first-child {
+    padding-right: 1em;
+}
+
+.displayMsg {
+    margin-top: 2em;
+}
