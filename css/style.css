@@ -440,12 +440,25 @@ header {
   color: var(--clr-dark);
 }
 
-.skill-tag.aquired {
+[data-type="language"] {
   background-color: var(--clr-light);
 }
 
+[data-type="framework"] {
+  background-color: var(--clr-mid-text);
+}
+
+[data-type="tool"] {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.skill-tag.aquired {
+  border: 2px solid blue;
+}
+
 .skill-tag.in-progress {
-  background-color: var(--clr-accent-2);
+  border: 2px solid yellow;
 }
 
 @media (min-width: 600px) {
