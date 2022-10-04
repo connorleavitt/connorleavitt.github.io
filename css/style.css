@@ -187,6 +187,10 @@ form textarea {
   font-family: var(--ff-primary);
 }
 
+.about-me__body--text {
+  font-size: 0.9em;
+}
+
 /* HEADER */
 
 header {
