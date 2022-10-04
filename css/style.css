@@ -310,15 +310,22 @@ header {
 /* INTRO */
 
 .intro {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  align-items: center;
 }
 
 .intro__img {
   box-shadow: var(--bs);
+  max-width: 350px;
+  margin-top: 1em;
 }
 
 .section__subtitle--intro {
   display: inline-block;
+  /* margin-top: 0.5em; */
+  width: 350px;
 }
 
 @media (min-width: 900px) {
@@ -416,6 +423,7 @@ header {
 
 .about-me__img {
   box-shadow: var(--bs);
+  /* max-width: 150px; */
 }
 
 /* .skill-tags-main-container {
@@ -461,7 +469,7 @@ header {
   border: 2px solid yellow;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .about-me {
     display: grid;
     grid-template-columns: 1fr 300px;
@@ -499,6 +507,13 @@ header {
     z-index: 2;
     border-radius: 0.5%;
   }
+}
+
+hr {
+  height: 5px;
+  background-color: var(--clr-mid-text);
+  border: 0;
+  outline: 0;
 }
 
 /* MY WORK */
