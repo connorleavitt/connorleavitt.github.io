@@ -35,10 +35,10 @@
         <ul class="nav__list">
           <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
           <li class="nav__item">
-            <a href="#services" class="nav__link">My Services</a>
+            <a href="#about" class="nav__link">About Me</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About Me</a>
+            <a href="#skills" class="nav__link">My Skills</a>
           </li>
           <li class="nav__item">
             <a href="#work" class="nav__link">My Work</a>
@@ -63,97 +63,105 @@
         alt="a picture of Connor Leavitt smiling"
         class="intro__img"
       />
-      <!-- need to input a picture of ME -->
+      <a href="#work" class="btn work-btn"
+        >Check out my work
+        <i class="fa-solid fa-angle-down"></i>
+      </a>
     </section>
 
-    <!-- MY SERVICES -->
-    <section class="my-services" id="services">
-      <h2 class="section__title section__title--services">What I do</h2>
-      <div class="services">
-        <div class="service">
-          <h3>WORK 1</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-            praesentium quibusdam iusto. Sequi quis, eius deleniti iure autem
-            consectetur nulla odio qui necessitatibus eum consequatur,
-            voluptates, quos sit illo. Officiis.
-          </p>
-        </div>
-        <!-- / service -->
-
-        <div class="service">
-          <h3>WORK 2</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-            praesentium quibusdam iusto. Sequi quis, eius deleniti iure autem
-            consectetur nulla odio qui necessitatibus eum consequatur,
-            voluptates, quos sit illo. Officiis.
-          </p>
-        </div>
-        <!-- / service -->
-
-        <div class="service">
-          <h3>WORK 3</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-            praesentium quibusdam iusto. Sequi quis, eius deleniti iure autem
-            consectetur nulla odio qui necessitatibus eum consequatur,
-            voluptates, quos sit illo. Officiis.
-          </p>
-        </div>
-        <!-- / service -->
-      </div>
-      <!-- / services -->
-      <a href="#work" class="btn">My Work</a>
-    </section>
+    <div class="spacer waves-dark-to-light"></div>
 
     <!-- ABOUT ME -->
     <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">
-        frontend web dev located in SF
-      </p>
-
-      <div class="about-me__body">
-        <p class="about-me__body--text">
-          Astronaut. That was my first dream job as a kid. A passion for
-          exploration, curiousty for knowledge, and hunger for facing the
-          unknown. I've always been excited about
-          <strong>science and technology</strong>.
-          <br />
-          <br />
-          Professionally, I've used my Engingeering degree, over the last 6
-          years, to work on large logistical problems at Fortune 100 companies,
-          to solve hyper-focused issues at budding new tech start-ups, and now,
-          to pivot my career into
-          <strong>web devevlopment</strong>!
-          <br />
-          <br />
-          Personally, I am an avid traveller with a love for all things nature -
-          I even have over 50 house plants! I'm always looking to combine my
-          interests to solve fun and challenging problems!
+      <div class="about-me--container">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">
+          frontend web dev located in SF
         </p>
-        <hr />
-        <div class="skill-tags-main-container">
+
+        <div class="about-me__body">
+          <p class="about-me__body--text">
+            Astronaut. That was my first dream job as a kid. A passion for
+            exploration, curiousty for knowledge, and hunger for facing the
+            unknown. I've always been excited about
+            <strong>science and technology</strong>.
+            <br />
+            <br />
+            Professionally, I've used my Engingeering degree, over the last 6
+            years, to work on large logistical problems at Fortune 100
+            companies, to solve hyper-focused issues at budding new tech
+            start-ups, and now, to pivot my career into
+            <strong>web devevlopment</strong>!
+            <br />
+            <br />
+            Personally, I am an avid traveller with a love for all things nature
+            - I even have over 50 house plants! I'm always looking to combine my
+            interests to solve fun and challenging problems!
+          </p>
+        </div>
+
+        <img
+          src="./img/connor_antarctica.jpg"
+          alt="another image of Connor"
+          class="about-me__img"
+        />
+      </div>
+    </section>
+
+    <div class="spacer waves-light-to-dark"></div>
+
+    <!-- MY SKILLS -->
+    <section class="my-skills" id="skills">
+      <h2 class="section__title section__title--skills">My Skills</h2>
+
+      <div class="skill-tags-main-container">
+        <div class="skills-explain-border">
+          <div class="skill-tag aquired">Aquired</div>
+          <div class="skill-tag in-progress">In Progress</div>
+        </div>
+        <p class="section__subtitle section__subtitle--skills">Langauges</p>
+        <div class="skill-tags-main-subcontainer">
           <div class="skill-tag aquired" data-type="language">HTML</div>
           <div class="skill-tag aquired" data-type="language">CSS</div>
           <div class="skill-tag aquired" data-type="language">Javscript</div>
+          <div class="skill-tag in-progress" data-type="language">
+            Typescript
+          </div>
+        </div>
+        <p class="section__subtitle section__subtitle--skills">Frameworks</p>
+
+        <div class="skill-tags-main-subcontainer">
           <div class="skill-tag aquired" data-type="framework">React</div>
           <div class="skill-tag aquired" data-type="framework">Jest</div>
-          <div class="skill-tag aquired" data-type="tool">Node.js</div>
+          <div class="skill-tag in-progress" data-type="framework">Express</div>
+          <div class="skill-tag in-progress" data-type="framework">Next.js</div>
+        </div>
+        <p class="section__subtitle section__subtitle--skills">Databases</p>
+
+        <div class="skill-tags-main-subcontainer">
+          <div class="skill-tag in-progress" data-type="database">MongoDB</div>
+          <div class="skill-tag in-progress" data-type="database">GraphQL</div>
+        </div>
+        <p class="section__subtitle section__subtitle--skills">Tools / Misc.</p>
+
+        <div class="skill-tags-main-subcontainer">
           <div class="skill-tag aquired" data-type="tool">git</div>
+          <div class="skill-tag aquired" data-type="tool">GitHub</div>
+          <div class="skill-tag aquired" data-type="tool">Node.js</div>
           <div class="skill-tag aquired" data-type="tool">npm</div>
-          <div class="skill-tag in-progress" data-type="framework">MongoDB</div>
-          <div class="skill-tag in-progress" data-type="framework">GraphQL</div>
+          <div class="skill-tag aquired" data-type="tool">Webpack</div>
+          <div class="skill-tag aquired" data-type="tool">Firebase</div>
+          <div class="skill-tag aquired" data-type="tool">Jira</div>
+          <div class="skill-tag aquired" data-type="tool">VSCode</div>
+          <div class="skill-tag aquired" data-type="tool">PyCharm</div>
+          <div class="skill-tag aquired" data-type="tool">Linux</div>
+          <div class="skill-tag in-progress" data-type="tool">Figma</div>
+          <div class="skill-tag in-progress" data-type="tool">Redux</div>
         </div>
       </div>
-
-      <img
-        src="./img/connor_antarctica.jpg"
-        alt="another image of Connor"
-        class="about-me__img"
-      />
     </section>
+
+    <div class="spacer waves-above-work"></div>
 
     <!-- MY WORK -->
     <section class="my-work" id="work">
@@ -186,6 +194,8 @@
         </a>
       </div>
     </section>
+
+    <div class="spacer waves-below-work"></div>
 
     <!-- CONTACT ME -->
     <section class="contact-me" id="contact">
