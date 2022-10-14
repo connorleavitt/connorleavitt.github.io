@@ -615,6 +615,14 @@ hr {
   border: 2px solid rgb(255, 255, 148);
 }
 
+@media (max-width: 375px) {
+  .skills-explain-border {
+    font-size: 0.8rem;
+    right: 5px;
+    top: -9%;
+  }
+}
+
 @media (min-width: 700px) {
   .my-skills {
     /* display: flex;
