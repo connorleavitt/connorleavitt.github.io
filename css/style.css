@@ -635,6 +635,11 @@ hr {
   .section__title--skills {
     font-size: 3rem;
   }
+
+  .skills-explain-border {
+    right: 10px;
+    top: -13%;
+  }
 }
 
 /* MY WORK */
