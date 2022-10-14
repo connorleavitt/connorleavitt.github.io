@@ -199,7 +199,14 @@ header {
   padding: 1em;
   position: sticky;
   top: 0;
-  background: transparent;
+  background: linear-gradient(
+    rgba(var(--clr-main-rgb), 1),
+    rgba(var(--clr-main-rgb), 0.9),
+    rgba(var(--clr-main-rgb), 0.7),
+    rgba(var(--clr-main-rgb), 0.5),
+    rgba(var(--clr-main-rgb), 0.3),
+    rgba(var(--clr-main-rgb), 0)
+  );
   z-index: 500;
 }
 
@@ -303,6 +310,12 @@ header {
 }
 .hamburger::after {
   bottom: 6px;
+}
+
+@media (min-width: 600px) {
+  header {
+    background: transparent;
+  }
 }
 
 /* INTRO */
@@ -800,7 +813,7 @@ hr {
 
 .spacer {
   aspect-ratio: 900/300;
-  width: 110%;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -810,6 +823,7 @@ hr {
 .waves-dark-to-light {
   background-image: url("../img/layered-peaks-haikei.svg");
   border-bottom: 1px solid #c0decb;
+  /* border-right: 1px solid #99bea6; */
 }
 
 .waves-light-to-dark {
