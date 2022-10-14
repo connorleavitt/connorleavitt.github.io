@@ -199,14 +199,13 @@ header {
   padding: 1em;
   position: sticky;
   top: 0;
-  background: var(--clr-light);
+  background: transparent;
   z-index: 500;
 }
 
-.logo {
-  max-width: 25px;
-  padding: 0;
-  margin: 0;
+.fa-c {
+  font-size: 2rem;
+  color: var(--clr-accent-2);
 }
 
 .nav {
@@ -252,7 +251,7 @@ header {
   cursor: pointer;
   position: absolute;
   right: 1em;
-  top: 1em;
+  top: 1.3em;
   z-index: 1000;
 }
 
@@ -284,7 +283,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: var(--clr-dark);
+  background: var(--clr-accent-2);
   width: 2em;
   height: 3px;
   border-radius: 1em;
@@ -604,6 +603,17 @@ hr {
 }
 
 @media (min-width: 700px) {
+  .my-skills {
+    /* display: flex;
+    flex-direction: column; */
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 1000px;
+  }
+
+  .section__title--skills {
+    font-size: 3rem;
+  }
 }
 
 /* MY WORK */
@@ -612,12 +622,22 @@ hr {
   background-color: var(--clr-light);
   color: var(--clr-dark);
   text-align: center;
+  padding: 0 2em;
+}
+
+.section__title--work {
+  font-size: 2rem;
+}
+
+.github-project-link {
+  color: inherit;
 }
 
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   max-width: 1000px;
+  gap: 1em;
   margin: 0 auto;
 }
 
@@ -641,6 +661,30 @@ hr {
   opacity: 0.85;
 }
 
+.project-link-text {
+  color: var(--clr-dark);
+  cursor: pointer;
+  transition: transform 150ms;
+}
+
+.portfolio a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 2px solid var(--clr-accent-2);
+}
+
+.portfolio a .project-link-text:hover {
+  transform: scale(1.5);
+}
+
+@media (min-width: 700px) {
+  .section__title--work {
+    font-size: 3rem;
+  }
+}
+
 /* CONTACT ME */
 
 .contact-me {
@@ -651,6 +695,11 @@ hr {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.section__title--contact {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
 }
 
 .contact-me p {
@@ -673,13 +722,19 @@ hr {
   background: var(--clr-accent-2);
 }
 
+@media (min-width: 700px) {
+  .section__title--contact {
+    font-size: 3rem;
+  }
+}
+
 /* FOOTER */
 
 .footer {
   background: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
-  padding: 1.5em 0;
+  padding: 0.5em 0;
   font-size: var(--fs-h3);
 }
 
@@ -705,7 +760,7 @@ hr {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 2em 0 0;
+  margin: 0.5em 0 0;
   padding: 0;
 }
 
