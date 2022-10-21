@@ -209,6 +209,10 @@ header {
   color: var(--clr-accent-2);
 }
 
+.logo:hover {
+  color: var(--clr-light);
+}
+
 .nav {
   position: fixed;
   background: var(--clr-light);
