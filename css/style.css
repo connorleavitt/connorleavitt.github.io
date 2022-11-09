@@ -38,6 +38,13 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding, 100px);
+}
+
+@media (max-width: 500px) {
+  html {
+    scroll-padding-top: var(--scroll-padding, 20px);
+  }
 }
 
 body {
@@ -316,12 +323,12 @@ header {
     backdrop-filter: blur(5px);
   }
   /* #home, */
-  #about,
+  /* #about,
   #skills,
   #work {
     margin-top: -100px;
     padding-top: 100px;
-  }
+  } */
 
   .nav {
     position: fixed;
@@ -682,16 +689,16 @@ hr {
 
 /* MY WORK */
 
-#work {
+/* #work {
   margin-top: -100px;
   padding-top: 100px;
-}
+} */
 
 .my-work {
   background-color: var(--clr-light);
   color: var(--clr-dark);
   text-align: center;
-  padding: 0 2em;
+  /* padding: 0 2em; */
 }
 
 .section__title--work {
