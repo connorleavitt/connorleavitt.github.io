@@ -167,150 +167,122 @@
     <div class="spacer waves-above-work"></div>
 
     <!-- MY WORK -->
-    <section class="my-work" id="work">
-      <h2 class="section__title section__title--work">My Work</h2>
-      <p class="section__subtitle section__subtitle--work">
-        Please visit my GitHub for a look at my
-        <a
-          href="https://github.com/connorleavitt/Projects"
-          class="github-project-link"
-          >projects!</a
-        >
-      </p>
 
-      <div class="portfolio">
-        <!-- Portfolio Item 1 -->
+    <section class="section__my-work" id="work">
+      <div class="my-work--container">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">
+          Please visit my GitHub for a look at my
+          <a
+            href="https://github.com/connorleavitt/Projects"
+            class="github-project-link"
+            >projects!</a
+          >
+        </p>
+        <ul class="section__portfolio-list">
+          <li class="section__portfolio-list-item">
+            <div class="section__portfolio-list-item-img-container left">
+              <a
+                href="https://github.com/connorleavitt/houseplant_care_tracker"
+                class="section__portfolio-list-item-img-container-link"
+              >
+                <img
+                  src="./img/Houseplant_Care_Tracker.png"
+                  alt=""
+                  class="section__portfolio-list-item-img"
+                />
+              </a>
+            </div>
+            <div class="section__portfolio-list-item-content right">
+              <h4>Houseplant Care Tracker</h4>
+              <div class="section__portfolio-list-item-content-text-container">
+                <p class="section__portfolio-list-item-content-text-one">
+                  As a houseplant enthusiast, tracking each plant's information
+                  overtime was a challenge.
+                </p>
+                <p class="section__portfolio-list-item-content-text-two">
+                  This fullstack React CRUD app, utilizing MongoDB, Express, and
+                  Node as the backend, offers user auth (registration, tokens,
+                  etc) to view their plant information. The user has the ability
+                  to create, edit and delete their plant profiles.
+                </p>
+              </div>
 
-        <a
-          href="https://github.com/connorleavitt/sfwaste"
-          class="portfolio__item"
-        >
-          <img src="./img/SF_Waste.png" alt="" class="portfolio__img" />
-        </a>
+              <div class="section__portfolio-list-item-content-tag-container">
+                <div class="section__portfolio-list-item-content-tag">
+                  MongoDB
+                </div>
+                <div class="section__portfolio-list-item-content-tag">
+                  Express
+                </div>
+                <div class="section__portfolio-list-item-content-tag">
+                  React
+                </div>
+                <div class="section__portfolio-list-item-content-tag">Node</div>
+                <div class="section__portfolio-list-item-content-tag">
+                  Material UI
+                </div>
+              </div>
+              <div class="section__portfolio-list-item-learn-more">
+                <a
+                  href="https://github.com/connorleavitt/houseplant_care_tracker"
+                  class="section__portfolio--link"
+                >
+                  <i class="fa-brands fa-square-github"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="section__portfolio-list-item">
+            <div class="section__portfolio-list-item-img-container right">
+              <a
+                href="https://github.com/connorleavitt/sfwaste"
+                class="section__portfolio-list-item-img-container-link"
+              >
+                <img
+                  src="./img/SF_Waste.png"
+                  alt=""
+                  class="section__portfolio-list-item-img"
+                />
+              </a>
+            </div>
+            <div class="section__portfolio-list-item-content left">
+              <h4>SF Waste</h4>
+              <div class="section__portfolio-list-item-content-text-container">
+                <p class="section__portfolio-list-item-content-text-one">
+                  Struggling to understand the local composting and recycling
+                  requirements for San Francisco, I set out to build a tool to
+                  help.
+                </p>
+                <p class="section__portfolio-list-item-content-text-two">
+                  This simple, single-page information-based React web app
+                  provides a search tool, using a local database, to query user
+                  inputs and highlights current waste management behavior.
+                </p>
+              </div>
 
-        <!-- Portfolio Item 2 -->
-        <a
-          href="https://github.com/connorleavitt/houseplant_care_tracker"
-          class="portfolio__item"
-        >
-          <img
-            src="./img/Houseplant_Care_Tracker.png"
-            alt=""
-            class="portfolio__img"
-          />
-        </a>
-        <a
-          href="https://github.com/connorleavitt/Projects/tree/main/Shopping_Cart/shopping_cart"
-          class="portfolio__item"
-        >
-          <p class="project-link-text">Shopping Cart</p>
-        </a>
+              <div class="section__portfolio-list-item-content-tag-container">
+                <div class="section__portfolio-list-item-content-tag">JS</div>
+                <div class="section__portfolio-list-item-content-tag">
+                  React
+                </div>
+                <div class="section__portfolio-list-item-content-tag">
+                  Unsplash API
+                </div>
+              </div>
+              <div class="section__portfolio-list-item-learn-more">
+                <a
+                  href="https://github.com/connorleavitt/sfwaste"
+                  class="section__portfolio--link"
+                >
+                  <i class="fa-brands fa-square-github"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
-
-    <!-- <section class="section__my-work" id="work">
-      <h2 class="section__title section__title--work">My Work</h2>
-      <p class="section__subtitle section__subtitle--work">
-        Please visit my GitHub for a look at my
-        <a
-          href="https://github.com/connorleavitt/Projects"
-          class="github-project-link"
-          >projects!</a
-        >
-      </p>
-      <ul class="section__portfolio-list">
-        <li class="section__portfolio-list-item">
-          <div class="section__portfolio-list-item-img-container">
-            <a
-              href="https://github.com/connorleavitt/sfwaste"
-              class="section__portfolio-list-item-img-container-link"
-            >
-              <img
-                src="./img/SF_Waste.png"
-                alt=""
-                class="section__portfolio-list-item-img"
-              />
-            </a>
-          </div>
-          <div class="section__portfolio-list-item-content">
-            <h4>SF Waste</h4>
-            <div class="section__portfolio-list-item-content-text">
-              <p>
-                Struggling to understand the local composting and recycling
-                requirements for San Francisco, I set out to build a tool to
-                help.
-              </p>
-              <p>
-                This simple, single-page information-based React web app
-                provides a search tool, using a local database, to query user
-                inputs which highlights current waste management behavior.
-              </p>
-            </div>
-
-            <div class="section__portfolio-list-item-content-tag-container">
-              <div class="section__portfolio-list-item-content-tag">JS</div>
-              <div class="section__portfolio-list-item-content-tag">React</div>
-              <div class="section__portfolio-list-item-content-tag">
-                Unsplash API
-              </div>
-            </div>
-            <div class="section__portfolio-list-item-learn-more">
-              <a
-                href="https://github.com/connorleavitt"
-                class="section__portfolio--link"
-              >
-                <i class="fa-brands fa-square-github"></i>
-              </a>
-            </div>
-          </div>
-        </li>
-        <li class="section__portfolio-list-item">
-          <div class="section__portfolio-list-item-img-container">
-            <a
-              href="https://github.com/connorleavitt/houseplant_care_tracker"
-              class="section__portfolio-list-item-img-container-link"
-            >
-              <img
-                src="./img/Houseplant_Care_Tracker.png"
-                alt=""
-                class="section__portfolio-list-item-img"
-              />
-            </a>
-          </div>
-          <div class="section__portfolio-list-item-content">
-            <h4>SF Waste</h4>
-            <div class="section__portfolio-list-item-content-text">
-              <p>
-                Struggling to understand the local composting and recycling
-                requirements for San Francisco, I set out to build a tool to
-                help.
-              </p>
-              <p>
-                This simple, single-page information-based React web app
-                provides a search tool, using a local database, to query user
-                inputs which highlights current waste management behavior.
-              </p>
-            </div>
-
-            <div class="section__portfolio-list-item-content-tag-container">
-              <div class="section__portfolio-list-item-content-tag">JS</div>
-              <div class="section__portfolio-list-item-content-tag">React</div>
-              <div class="section__portfolio-list-item-content-tag">
-                Unsplash API
-              </div>
-            </div>
-            <div class="section__portfolio-list-item-learn-more">
-              <a
-                href="https://github.com/connorleavitt"
-                class="social-list__link"
-              >
-                <i class="fa-brands fa-square-github"></i>
-              </a>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section> -->
 
     <div class="spacer waves-below-work"></div>
 
