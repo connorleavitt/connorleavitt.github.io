@@ -634,10 +634,10 @@ hr {
   color: var(--clr-dark);
 }
 
-[data-type="language"],
-[data-type="framework"],
-[data-type="tool"],
-[data-type="database"] {
+[data-type="frontend"],
+[data-type="backend"],
+[data-type="design"],
+[data-type="tool"] {
   background-color: var(--clr-dark);
   color: var(--clr-light);
 }
