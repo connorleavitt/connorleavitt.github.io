@@ -170,7 +170,8 @@ h3 {
 }
 
 .section__subtitle--intro,
-.section__subtitle--about {
+.section__subtitle--about,
+.section__subtitle--work {
   background: var(--clr-accent);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
@@ -178,8 +179,6 @@ h3 {
 }
 
 .section__subtitle--work {
-  color: var(--clr-dark);
-  font-weight: var(--fw-bold);
   margin-bottom: 2em;
 }
 
@@ -562,7 +561,8 @@ header {
 
   /* fix height of accent bar */
 
-  .section__subtitle--about {
+  .section__subtitle--about,
+  .section__subtitle--work {
     grid-column: 1 / -1;
     grid-row: 2;
     position: relative;
@@ -617,6 +617,7 @@ hr {
   border-radius: 0 10px 10px 0;
   font-family: var(--ff-secondary);
   color: var(--clr-dark);
+  font-size: 1.2rem;
   margin: 0.5em 0;
 }
 
@@ -784,16 +785,18 @@ hr {
   padding: 0;
 }
 
-.section__portfolio-list-item:not(:last-child) {
-  margin-bottom: 4rem;
-}
-
 .section__portfolio-list-item {
   display: flex;
   flex-direction: column-reverse;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.section__portfolio-list-item:not(:last-child) {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 3px solid rgba(var(--clr-main-rgb), 0.5);
 }
 
 .section__portfolio-list-item-img {
@@ -859,6 +862,11 @@ hr {
   color: var(--clr-accent);
 }
 
+.section__portfolio--link.github {
+  margin-left: 0.5rem;
+  color: var(--clr-accent-2);
+}
+
 @media (min-width: 800px) {
   .section__my-work {
     margin: 0 auto;
@@ -883,8 +891,7 @@ hr {
     grid-template-columns: repeat(10, 1fr);
     list-style: none;
     margin: 0;
-    margin-bottom: 5rem;
-    padding: 0;
+    padding: 1rem;
   }
 
   .section__portfolio-list-item-img-container.right {
