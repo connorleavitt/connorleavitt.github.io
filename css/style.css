@@ -272,6 +272,12 @@ header {
   z-index: 1000;
 }
 
+.nav-toggle:hover .hamburger::before,
+.nav-toggle:hover .hamburger,
+.nav-toggle:hover .hamburger::after {
+  background: white;
+}
+
 .nav-open .nav {
   transform: translateX(0%);
 }
