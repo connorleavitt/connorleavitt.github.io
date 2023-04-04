@@ -767,6 +767,10 @@ hr {
   transform: scale(1.5);
 }
 
+.section__portfolio--live-link {
+  color: red;
+}
+
 @media (min-width: 700px) {
   .section__title--work {
     font-size: 3rem;
