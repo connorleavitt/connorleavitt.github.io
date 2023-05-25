@@ -453,9 +453,18 @@ header {
     text-align: right;
     position: relative;
     left: -1.5em;
-    top: -10%;
+    top: -20%;
     width: calc(100% + 2.5em);
     font-size: 1.5rem;
+  }
+
+  .section__subtitle--intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section__subtitle--intro-sub {
+    font-size: 1rem;
   }
 
   .work-btn {
