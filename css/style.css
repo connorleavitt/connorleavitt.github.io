@@ -39,6 +39,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--scroll-padding, 100px);
+  scroll-snap-type: y mandatory;
 }
 
 @media (max-width: 500px) {
@@ -59,6 +60,8 @@ body {
 
 section {
   padding: 5em 2em;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
 }
 
 img {
@@ -793,6 +796,7 @@ hr {
   display: flex;
   justify-content: center;
   padding: 0;
+  padding-top: 5rem;
 }
 
 .my-work--container {
@@ -894,7 +898,7 @@ hr {
     color: var(--clr-dark);
     display: flex;
     justify-content: center;
-    /* padding: 0; */
+    padding-top: 0;
   }
 
   .my-work--container {
