@@ -45,6 +45,7 @@ html {
 @media (max-width: 500px) {
   html {
     scroll-padding-top: var(--scroll-padding, 20px);
+    scroll-snap-type: none;
   }
 }
 
@@ -61,7 +62,6 @@ body {
 section {
   padding: 5em 2em;
   scroll-snap-align: start;
-  scroll-snap-stop: normal;
 }
 
 img {
