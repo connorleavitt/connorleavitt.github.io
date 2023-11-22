@@ -1,6 +1,3 @@
-# connorleavitt.github.io
-connorleavitt.com
+# connorleavitt.com
 
-hello world
-
-BIG CHANGES ARE COMING!
+Welcome to my website!
